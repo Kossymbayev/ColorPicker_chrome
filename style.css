@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.picker-container {
+    width: 350px;
+    padding: 12px;
+    border-radius: 24px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.picker-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 18px 0;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.picker-btn {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 6px 12px;
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 5px;
+    transition: background-color 0.15s ease;
+}
+.picker-btn:hover { background-color: rgba(0,0,0,0.1) }
+
+.colors {
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #fff;
+    margin-top: 12px;
+}
+.colors.hide { display: none }
+
+.colors-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.colors-title { font-size: 0.95rem }
+#clear-btn {
+    font-size: 0.85rem;
+    opacity: 0.65;
+    cursor: pointer;
+}
+#clear-btn:hover { opacity: 1 }
+
+.colors-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 0;
+    list-style: none;
+}
+
+.color {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 3);
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.color .rect {
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
+    border-radius: 6px;
+}
+.color .value {
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.color-detail {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.color-preview {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.color-params {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.color-params .label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.color-params .value { cursor: pointer }
